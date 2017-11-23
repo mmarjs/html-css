@@ -1,0 +1,163 @@
+a:link {
+    color: #4a63da;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #4a63da;
+    text-decoration: none;
+}
+
+a:active {
+    color: #5669c4;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #5669c4;
+    text-decoration: underline;
+}
+
+p,
+td,
+blockquote {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 9pt;
+}
+
+td.small,
+p.small,
+div.small,
+font.small {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 7pt;
+}
+
+td.small2 {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 8pt;
+}
+
+td.news {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 7pt;
+    background-color: #e8eeec;
+}
+
+font.large,
+td.large,
+p.large,
+div.large {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11pt;
+    font-weight: bold;
+}
+
+td.list {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+    background-color: #e8eeec;
+}
+
+h3 {
+    font-size: 12pt;
+    color: #666666;
+    font-weight: bold;
+}
+
+h1 {
+    text-align: center;
+    background-color: #e9eef9;
+    margin-top: 4px;
+    padding: 4px 8px;
+    font-size: 18pt;
+    color: #000000;
+    font-weight: bold;
+}
+
+h2 {
+    text-align: center;
+    background-color: #e9eef9;
+    margin-top: 4px;
+    padding: 4px 8px;
+    font-size: 14pt;
+    color: #000000;
+    font-weight: bold;
+}
+
+p.list,
+li.list {
+    text-align: left;
+    background-color: #e8eaf0;
+    margin-top: 8px;
+    padding: 4px 8px;
+    font-size: 9pt;
+    color: #000000;
+    font-weight: normal;
+}
+
+div.navi {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 8pt;
+    text-align: left;
+}
+
+td.navi {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 8pt;
+    text-align: left;
+    text-decoration: none;
+    padding: 0px 4px;
+}
+
+select.navi {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 8pt;
+    text-align: left;
+    text-decoration: none;
+    margin-top: 0px;
+    margin-right: 4px;
+}
+
+ul {
+    margin-top: 4px;
+}
+
+p.listsmall,
+li.listsmall {
+    text-align: left;
+    padding: 4px 8px;
+    font-size: 9pt;
+    color: #000000;
+    font-weight: normal;
+}
+
+.faqquestion {
+    text-align: left;
+    background-color: #e8eaf0;
+    margin-top: 8px;
+    padding: 4px 8px;
+    font-size: 10pt;
+    color: #000000;
+    font-weight: bold;
+}
+
+td.faqanswer {
+    font-size: 9pt;
+    color: #444444;
+    font-weight: normal;
+}
+
+td.menuentry {
+    text-align: center;
+    background-color: #e8eaee;
+}
+
+td.activemenu {
+    text-align: center;
+    background-color: #e8ead0;
+}
+
+table.main {
+    background-color: #49A5E4;
+}

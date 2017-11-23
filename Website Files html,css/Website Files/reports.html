@@ -1,0 +1,136 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Example</title>
+  <meta name="description" content="Example">
+  <meta name="author" content="Example">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/calendar.css">
+  <link rel="stylesheet" href="css/flipclock.css">
+  
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+  <script src="js/circles.js"></script>
+  <script src="js/calendar.js"></script>
+  <script src="js/flipclock.js"></script>
+  
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+<body>
+	<header class="bordered">
+		<div id="headerwrap">
+			<div id="logo">
+				<a href="#"><img src="images/logo.png"></a>
+			</div>
+			<div id="nav">
+				<a id="nav-dashboard" href="dashboard.html" >Dashboard</a>
+				<a id="nav-reports" href="reports.html"class="active">Reports</a>
+				<a id="nav-academy" href="academy.html">Academy</a>
+				<a id="nav-affiliates" href="affiliates-howitworks.html">Affiliates</a>
+			</div>
+			<div id="nav-after">
+				<a id="nav-profile" href="profile-settings.html">Profile</a>
+				<a id="nav-logout-light" href="#">&nbsp;</a>
+			</div>
+		</div>
+	</header>
+	<div id="wrapper">
+		<div class="page-head">
+			<h1>Reports</h1>
+		</div>
+		<section>
+			<table id="reports-table" class="tabledef">
+				<thead>
+					<tr>
+						<th>Report Date</th>
+						<th>Report Name</th>
+						<th>Report Status</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>19 March 2016</td>
+						<td>466309002327XXXX</td>
+						<td class="clr-blue">Successful</td>
+					</tr>
+					<tr>
+						<td>14 March 2016</td>
+						<td>466309002328XXXX</td>
+						<td class="clr-blue">Successful</td>
+					</tr>
+					<tr>
+						<td>10 March 2016</td>
+						<td>466309002327XXXX</td>
+						<td class="clr-red">Failed</td>
+					</tr>
+					<tr>
+						<td>09 March 2016</td>
+						<td>466309002328XXXX</td>
+						<td class="clr-red">Failed</td>
+					</tr>
+					<tr>
+						<td>09 March 2016</td>
+						<td>466309002327XXXX</td>
+						<td class="clr-blue">Successful</td>
+					</tr>
+					<tr>
+						<td>15 February 2016</td>
+						<td>466309002328XXXX</td>
+						<td class="clr-red">Failed</td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td colspan="100" class="tabledef-pagination">
+							<div class="btn-left">
+								<a href="#"><img src="images/arr-left.png"> Previous</a>
+							</div>
+							<div class="table-pagination-pages">
+								<a href="#">1</a>
+								<a class="active" href="#">2</a>
+								<a href="#">3</a>
+								<a href="#">4</a>
+								<span>...</span>
+								<a href="#">17</a>
+							</div>
+							<div class="btn-right">
+								<a href="#">Next <img src="images/arr-right.png"></a>
+							</div>
+						</td>
+					</tr>
+				</tfoot>
+			</table>
+			<div class="spacerbig"></div>
+			<div class="align-center">
+				<a href="#" class="button bg-blue autowidth">Upload updated credit report</a>
+			</div>
+		</section>
+		<footer>
+			<div id="footer-links">
+				<a href="#">Privacy</a>
+				<a href="#">Terms</a>
+				<a href="#">Disclosure</a>
+				<a href="#">Compilance </a>
+				<a href="#">Affiliates</a>
+				<a href="#">Whitelist</a>
+				<a href="#">Refunds</a>
+			</div>
+			<div>
+				Copyright © 2016 Credit Control.
+			</div>
+			<div id="footer-social">
+				<a href="#"><img src="images/social-fb.png"</a>
+				<a href="#"><img src="images/social-twitter.png"</a>
+			</div>
+		</footer>
+	</div>	
+</body>
+</html>

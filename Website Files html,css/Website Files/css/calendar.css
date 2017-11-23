@@ -1,0 +1,121 @@
+/*
+ * Copyright (c) 2012-2013 Thibaut Courouble
+ * http://www.cssflow.com
+ *
+ * Licensed under the MIT License:
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+
+/* calendar style here */
+.picker-container {
+  position: absolute;
+  z-index: 99;
+}
+
+.cal tbody {
+	border: 1px solid #e5e5e5;
+	border-radius: 5px;
+}
+
+.cal .month {
+	font-weight: 500;
+}
+
+.cal {
+  background-color: white;
+  display: block;
+  width: 216px;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.cal a {
+  text-decoration: none;
+}
+
+.cal tr, .cal th, .cal td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+.cal caption {
+  line-height: 32px;
+  font-weight: 300;
+  color: #000;
+  text-align: center;
+}
+.cal caption a {
+  display: block;
+  line-height: 30px;
+  padding: 0 10px;
+  font-size: 15px;
+  color: #cccccc;
+}
+.cal caption .prev {
+  float: left;
+}
+.cal caption .next {
+  float: right;
+}
+.cal th, .cal td {
+  width: 30px;
+  text-align: center;
+}
+.cal th:first-child, .cal td:first-child {
+  border-left: 0;
+}
+.cal th {
+  line-height: 26px;
+  font-size: 11px;
+  color: #696969;
+}
+.cal td {
+  font-size: 13px;
+  font-weight: 300;
+  border-top: 1px solid #e5e5e5;
+  border-left: 1px solid #e5e5e5;
+}
+#calendar-big .cal td {
+	font-size: 18px;
+}
+.cal td a {
+  clear: both;
+  display: block;
+  position: relative;
+  width: 40px;
+  line-height: 30px;
+  color: #666;
+  background: #fff;
+}
+#calendar-big .cal td a {
+	width: 61px;
+	line-height: 30px;
+	padding-left: 20px;
+	padding-bottom: 20px;
+}
+.cal td a:hover, .cal td.off a {
+  background: #f5f7f7;
+}
+.cal td.off a {
+  color: #b3b3b3;
+}
+.cal td.active a, .cal td a:active {
+  color: #fff;
+  background: #71c5cd;
+}
+.cal td.active:first-child a, .cal td:first-child a:active {
+  border-left: 0;
+  margin-left: 0;
+}
+.cal td.active:last-child a, .cal td:last-child a:active {
+  border-right: 0;
+  margin-right: 0;
+}
+.cal tr:last-child td.active a, .cal tr:last-child td a:active {
+  border-bottom: 0;
+  margin-bottom: 0;
+}

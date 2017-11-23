@@ -1,0 +1,157 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Example</title>
+  <meta name="description" content="Example">
+  <meta name="author" content="Example">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/select.css">
+  
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+  <script src="js/select.js"></script>
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+<body class="step3">
+	<header class="bordered">
+		<div id="headerwrap">
+			<div id="logo">
+				<a href="#"><img src="images/logo.png"></a>
+			</div>
+			<div id="nav-after">
+				<a id="nav-support" href="#">Support</a>
+				<a id="nav-profile" href="#">Profile</a>
+				<a id="nav-logout" href="#">Logout</a>
+			</div>
+		</div>
+	</header>
+	<div class="popup-overlay">
+		<div class="popup-content popup-disputes">
+			<a href="#" class="popup-close"><img src="images/ico-close.png"></a>
+			<h1>Start Disputes</h1>
+			<div id="dispute-progress">
+				<div id="dispute-progress-content" class="centeredboxes">
+					<div id="dispute-step1" class="step-active">
+						ACCOUNT<br>
+						DETAILS
+					</div>
+					<div id="dispute-step2">
+						BILLING<br>
+						ADDRESS
+					</div>
+					<div id="dispute-step3">
+						PAYMENT<BR>
+						INFORMATION
+					</div>
+				</div>
+				<span id="dispute-progress-bar"></span>
+			</div>
+			<div class="spacer"></div>
+			<div id="dispute1-form-wrapper">
+				<form method="post" action="" name="duspute1-form" id="dispute1-form">
+					<div class="clearfix">
+						<div class="left">
+							<input type="email" name="df1-email" id="df1-email" class="i-email" placeholder="Email">
+						</div>
+						<div class="right">
+							<input type="text" name="df1-phone" id="df1-phone" class="i-phone" placeholder="Mobile Phone">
+						</div>
+					</div>
+					<input type="text" name="df1-username" id="df1-username" class="i-user" placeholder="Username">
+					<input type="text" name="df1-password" id="df1-password" class="i-password" placeholder="Password">
+					<div class="clearfix">
+						<div class="left">
+							<input type="text" name="df1-firstname" id="df1-firstname" class="i-user" placeholder="First Name">
+						</div>
+						<div class="right">
+							<input type="text" name="df1-lastname" id="df1-lastname" class="i-user" placeholder="Last Name">
+						</div>
+					</div>
+					<input type="text" name="df1-ssn" id="df1-ssn" class="i-ssn" placeholder="Social Security Number">
+					<div class="clearfix">
+						<div id="dispute-total" class="left clearfix">
+							<div class="left">
+								Today's Payment
+							</div>
+							<div class="right">
+								<h1>$47.00</h1>
+							</div>
+						</div>
+						<div class="right">
+							<input type="checkbox" name="df1-terms" id="df1-terms">
+							<label for="df1-terms">Agree to terms and conditions</label>
+						</div>
+					</div>
+					<div class="clear"></div>
+					<a href="#" class="button bg-yellow">NEXT STEP</a>
+				</form>
+			</div>
+			<div id="disputes-disclaimer">
+				*  Your information is 100% secure and will not be shared with anyone
+besides the credit bureaus during dispute verification
+			</div>
+		</div>
+	</div>
+	<div id="wrapper">
+		<section id="step-progress">
+			<div id="step-progress-content" class="centeredboxes">
+				<div id="step1" class="step-active">
+					Upload<br>
+	Credit Report
+				</div>
+				<div id="step2" class="step-active">
+					Review<br>
+	Your Report
+				</div>
+				<div id="step3" class="step-active highlighted">
+					Start<br>
+	Disputes
+				</div>
+			</div>
+			<span id="step-progress-bar" class="step3"></span>
+		</section>
+		<section id="video">
+			<h1>Start Disputes</h1>
+			<div id="video-wrapper">
+				<iframe id="video-player" type="text/html" width="100%" height="100%" src="http://www.youtube.com/embed/lYKRPzOi1zI?autoplay=0&controls=0&showinfo=0" frameborder="0"></iframe>
+
+			</div>
+			<div id="step-buttons">
+				<a href="#" class="button bg-yellow">START DISPUTES</a>
+				<a href="#" id="btn-customize">Customize</a>
+			</div>
+			<div id="clip-spacer">
+				<img src="images/clip.png">
+				<span></span>
+			</div>
+		</section>
+		<section id="bottom-info" class="centeredboxes">
+			<div>
+				<p>
+					Credit Control gives you the tools to challenge anything on your credit reports you believe to be inaccurate, incomplete, or unverifiable according to the Fair Credit Reporting Act (FCRA). We compare the creditre portdatabe tween all 3 bureaus to determinep otential errors on your credit reports and, by default, will include these potential errors as dispute reasons in the letters.
+				</p>
+			</div>
+			<div>
+				<p>The "StartDisputes" feature allows you to schedule disputes in advance to the 3 major credit bureaus and to all creditors/collection agencies involved all with just one-click.</p>
+				<p>Although we have default settings that do most of the hard work for you, feel free to customize the disputes as you see fit.</p>
+			</div>
+			<div>
+				<p>Clicking "StartDisputes" means you accept all settings and consent to begin the dispute process. </p>
+				<p>You can stop disputes any time by clicking "Stop Disputes". </p>
+				<p>Click here for more information</p>
+			</div>
+		</section>
+		<footer>
+			Copyright © 2016 Credit Control.
+		</footer>
+	</div>
+</body>
+</html>

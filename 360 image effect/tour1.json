@@ -1,0 +1,30 @@
+PanoramaStudioViewerParams = {
+    "panoramaStudioViewer": {
+        "key": "",
+        "autoplay": {
+            "pan": 2,
+            "restart": 5,
+            "status": "on",
+            "tilt": 0,
+            "zoom": 1
+        },
+        "camera": {
+            "maxpan": 360,
+            "maxtilt": 90,
+            "minpan": 0,
+            "mintilt": -90
+        },
+        "control": {
+            "mousemode": "move",
+            "touchmode": "drag"
+        },
+
+        "version": "4.0",
+        "view": {
+            "hfov": 102,
+            "pan": 143.16,
+            "tilt": -20.510000000000002
+        },
+        "image": { "baseindex": 1, "bitmap": [{ "back": { "src": "tour1_tiles/tour1_t_1b_%0y_%0x.jpg" }, "down": { "src": "tour1_tiles/tour1_t_1d_%0y_%0x.jpg" }, "front": { "src": "tour1_tiles/tour1_t_1f_%0y_%0x.jpg" }, "height": 3620, "left": { "src": "tour1_tiles/tour1_t_1l_%0y_%0x.jpg" }, "right": { "src": "tour1_tiles/tour1_t_1r_%0y_%0x.jpg" }, "tilesize": 480, "up": { "src": "tour1_tiles/tour1_t_1u_%0y_%0x.jpg" }, "width": 3620 }, { "back": { "src": "tour1_tiles/tour1_t_2b_%0y_%0x.jpg" }, "down": { "src": "tour1_tiles/tour1_t_2d_%0y_%0x.jpg" }, "front": { "src": "tour1_tiles/tour1_t_2f_%0y_%0x.jpg" }, "height": 1810, "left": { "src": "tour1_tiles/tour1_t_2l_%0y_%0x.jpg" }, "right": { "src": "tour1_tiles/tour1_t_2r_%0y_%0x.jpg" }, "tilesize": 480, "up": { "src": "tour1_tiles/tour1_t_2u_%0y_%0x.jpg" }, "width": 1810 }, { "back": { "src": "tour1_tiles/tour1_t_3b_%0y_%0x.jpg" }, "down": { "src": "tour1_tiles/tour1_t_3d_%0y_%0x.jpg" }, "front": { "src": "tour1_tiles/tour1_t_3f_%0y_%0x.jpg" }, "height": 905, "left": { "src": "tour1_tiles/tour1_t_3l_%0y_%0x.jpg" }, "right": { "src": "tour1_tiles/tour1_t_3r_%0y_%0x.jpg" }, "tilesize": 480, "up": { "src": "tour1_tiles/tour1_t_3u_%0y_%0x.jpg" }, "width": 905 }, { "back": { "src": "tour1_tiles/tour1_t_4b_%0y_%0x.jpg" }, "down": { "src": "tour1_tiles/tour1_t_4d_%0y_%0x.jpg" }, "front": { "src": "tour1_tiles/tour1_t_4f_%0y_%0x.jpg" }, "height": 452, "left": { "src": "tour1_tiles/tour1_t_4l_%0y_%0x.jpg" }, "right": { "src": "tour1_tiles/tour1_t_4r_%0y_%0x.jpg" }, "tilesize": 480, "up": { "src": "tour1_tiles/tour1_t_4u_%0y_%0x.jpg" }, "width": 452 }], "multilevel": true, "preview": { "src": "tour1_tiles/tour1_preview.jpg" }, "projection": "cubic" },
+    }
+}

@@ -1,0 +1,212 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Example</title>
+  <meta name="description" content="Example">
+  <meta name="author" content="Example">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/calendar.css">
+  <link rel="stylesheet" href="css/flipclock.css">
+  
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+  <script src="js/circles.js"></script>
+  <script src="js/calendar.js"></script>
+  <script src="js/flipclock.js"></script>
+  
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+<body>
+	<header>
+		<div id="headerwrap">
+			<div id="logo">
+				<a href="#"><img src="images/logo.png"></a>
+			</div>
+			<div id="nav">
+				<a id="nav-dashboard" href="dashboard.html">Dashboard</a>
+				<a id="nav-reports" href="reports.html">Reports</a>
+				<a id="nav-academy" href="academy.html">Academy</a>
+				<a id="nav-affiliates" href="affiliates-howitworks.html">Affiliates</a>
+			</div>
+			<div id="nav-after">
+				<a id="nav-profile" href="profile-settings.html" class="active">Profile</a>
+				<a id="nav-logout-light" href="#">&nbsp;</a>
+			</div>
+		</div>
+	</header>
+	<div id="head-submenu">
+		<div id="submenu">
+			<a id="sub-settings" href="profile-settings.html">Profile Settings</a>
+			<a id="sub-support" href="#">Support</a>
+			<a id="sub-billing" href="profile-billing.html" class="active">Billing</a>
+		</div>
+	</div>
+	<div id="wrapper">
+		<div class="page-head">
+			<h1>Billing Information</h1>
+		</div>
+		<section>
+			<div id="billing-subscriptions" class="content-left">
+				<div>
+					<h3>Subscriptions</h3>
+					<div class="subscription">
+						<a class="edit" href="#">EDIT</a>
+						<h3>Academy</h3>
+						<div class="sub-info centeredboxes">
+							<div class="sub-info-nb">
+								<span>Next Billing: </span>August 1st, 2015
+							</div>
+							<div class="sub-info-cc">
+								<span>Credit Card: </span>2570
+							</div>
+							<div class="sub-info-pr">
+								<span>Product Price: </span>$552
+							</div>
+						</div>
+					</div>
+					<div class="subscription">
+						<a class="edit" href="#">EDIT</a>
+						<h3>Reports</h3>
+						<div class="sub-info centeredboxes">
+							<div class="sub-info-nb">
+								<span>Next Billing: </span>August 1st, 2015
+							</div>
+							<div class="sub-info-cc">
+								<span>Credit Card: </span>2570
+							</div>
+							<div class="sub-info-pr">
+								<span>Product Price: </span>$552
+							</div>
+						</div>
+					</div>
+					<div class="subscription">
+						<a class="edit" href="#">EDIT</a>
+						<h3>Reports</h3>
+						<div class="sub-info centeredboxes">
+							<div class="sub-info-nb">
+								<span>Next Billing: </span>August 1st, 2015
+							</div>
+							<div class="sub-info-cc">
+								<span>Credit Card: </span>2570
+							</div>
+							<div class="sub-info-pr">
+								<span>Product Price: </span>$552
+							</div>
+						</div>
+					</div>
+					<div class="subscription">
+						<a class="edit" href="#">EDIT</a>
+						<h3>Academy</h3>
+						<div class="sub-info centeredboxes">
+							<div class="sub-info-nb">
+								<span>Next Billing: </span>August 1st, 2015
+							</div>
+							<div class="sub-info-cc">
+								<span>Credit Card: </span>2570
+							</div>
+							<div class="sub-info-pr">
+								<span>Product Price: </span>$552
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="order-history">
+					<table id="order-history-table" class="tabledef">
+						<thead>
+							<th>Date</th>
+							<th>Product</th>
+							<th>Receipt</th>
+						</thead>
+						<tbody>
+							<tr>
+								<td>19 Oct 2015</td>
+								<td>Academy</td>
+								<td><a href="#">View</a></td>
+							</tr>
+							<tr>
+								<td>19 Oct 2015</td>
+								<td>Reports</td>
+								<td><a href="#">View</a></td>
+							</tr>
+							<tr>
+								<td>19 Oct 2015</td>
+								<td>Academy</td>
+								<td><a href="#">View</a></td>
+							</tr>
+							<tr>
+								<td>19 Oct 2015</td>
+								<td>Reports</td>
+								<td><a href="#">View</a></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div id="billing-methods"class="content-right">
+				<h3>Payment Methods</h3>
+				
+				<div class="cc">
+					<a class="edit" href="#">EDIT</a>
+					<h3><img src="images/ico-visa.png"> ****  ****  ****  4257</h3>
+					<div class="cc-info">
+						<div><span>Expires: </span>09/18</div>
+						<div><strong>John Stalvey</strong>, 3116 Capital Cir NE</div>
+					</div>
+				</div>
+				<div class="cc">
+					<a class="edit" href="#">EDIT</a>
+					<h3><img src="images/ico-visa.png"> ****  ****  ****  8941</h3>
+					<div class="cc-info">
+						<div><span>Expires: </span>05/18</div>
+						<div><strong>Douglas Wellens</strong>, 641 PHLOX WAY NW</div>
+					</div>
+				</div>
+				<div class="cc">
+					<a class="edit" href="#">EDIT</a>
+					<h3><img src="images/ico-visa.png"> ****  ****  ****  4257</h3>
+					<div class="cc-info">
+						<div><span>Expires: </span>09/18</div>
+						<div><strong>John Stalvey</strong>, 3116 Capital Cir NE</div>
+					</div>
+				</div>
+				<div class="cc">
+					<a class="edit" href="#">EDIT</a>
+					<h3><img src="images/ico-visa.png"> ****  ****  ****  8941</h3>
+					<div class="cc-info">
+						<div><span>Expires: </span>05/18</div>
+						<div><strong>Douglas Wellens</strong>, 641 PHLOX WAY NW</div>
+					</div>
+				</div>
+				<a id="addcard" href="#" class="button bg-blue">Add New Card</a>
+			</div>
+			<div class="clear"></div>
+		</section>
+		<footer>
+			<div id="footer-links">
+				<a href="#">Privacy</a>
+				<a href="#">Terms</a>
+				<a href="#">Disclosure</a>
+				<a href="#">Compilance </a>
+				<a href="#">Affiliates</a>
+				<a href="#">Whitelist</a>
+				<a href="#">Refunds</a>
+			</div>
+			<div>
+				Copyright © 2016 Credit Control.
+			</div>
+			<div id="footer-social">
+				<a href="#"><img src="images/social-fb.png"</a>
+				<a href="#"><img src="images/social-twitter.png"</a>
+			</div>
+		</footer>
+	</div>	
+</body>
+</html>

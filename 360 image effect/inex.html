@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta property="og:image" content="tour1_tiles\tour1_thumb.jpg">
+    <title>PanoramaStudio Gallery - 360x180 panorama example</title>
+    <link rel=stylesheet type="text/css" href="pa.css">
+</head>
+
+<body>
+    <div align="center" style="height: 90%; overflow:hidden;">
+        <noscript><div style="color: red; width: 30%; border: 1px solid red; padding: 4px; font-family: sans-serif;">ERROR: Your web browser must have JavaScript enabled to show this panorama.</div></noscript>
+        <div id="panoStudioViewerID" style="position: absolute; left: 0px; top: 0px; width: 100% ; height: 90% ;"></div>
+        <script type="text/javascript" src="panoStudioViewer.js"></script>
+        <script type="text/javascript">
+            panoStudioViewer.insert("panoStudioViewerID", "tour1.json", {
+                html5: "disable_webgl_warning"
+            });
+        </script>
+    </div>
+
+</body>
+
+</html>

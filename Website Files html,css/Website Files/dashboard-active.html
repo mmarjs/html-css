@@ -1,0 +1,196 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Example</title>
+  <meta name="description" content="Example">
+  <meta name="author" content="Example">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/calendar.css">
+  <link rel="stylesheet" href="css/flipclock.css">
+  
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+  <script src="js/circles.js"></script>
+  <script src="js/calendar.js"></script>
+  <script src="js/flipclock.js"></script>
+  
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+<body>
+	<header>
+		<div id="headerwrap">
+			<div id="logo">
+				<a href="#"><img src="images/logo.png"></a>
+			</div>
+			<div id="nav">
+				<a id="nav-dashboard" href="dashboard.html" class="active">Dashboard</a>
+				<a id="nav-reports" href="reports.html">Reports</a>
+				<a id="nav-academy" href="academy.html">Academy</a>
+				<a id="nav-affiliates" href="affiliates-howitworks.html">Affiliates</a>
+			</div>
+			<div id="nav-after">
+				<a id="nav-profile" href="profile-settings.html">Profile</a>
+				<a id="nav-logout-light" href="#">&nbsp;</a>
+			</div>
+		</div>
+	</header>
+	<div id="head-subinfo" class="dash-active">
+		<div id="subnav-wrapper">
+			<span id="subnav-important" class="subnav-title">Important!</span>
+			You need to upload your updated credit report right now’ with an ‘Upload Now’ button
+		</div>
+	</div>
+	<div id="wrapper">
+		<div class="page-head">
+			<h1>Credit Report Removals</h1>
+		</div>
+		<section>
+			<div id="cr-graphs" class="centeredboxes">
+				<div>
+					<div id="cr-graph-1" class="cr-graph"></div>
+					<div class="cr-graph-info">
+						TOTAL<br>
+						DELETIONS
+					</div>
+					<div class="cr-graph-data">05</div>
+				</div>
+				<div>
+					<div id="cr-graph-2" class="cr-graph"></div>
+					<div class="cr-graph-info">
+						TOTAL<br>
+						NEGATIVE
+					</div>
+					<div class="cr-graph-data">15</div>
+				</div>
+				<div>
+					<div id="cr-graph-3" class="cr-graph"></div>
+					<div class="cr-graph-info">
+						TOTAL<br>
+						POSITIVE
+					</div>
+					<div class="cr-graph-data">04</div>
+				</div>
+			</div>
+		</section>
+		<section id="dashboard-progress">
+			<div class="progress-wrapper">
+				<div class="progress-label">
+					<div class="left">Status</div>
+					<div class="right">33% Complete</div>
+					<div class="clear"></div>
+				</div>
+				<div class="progress-bar-bg">
+					<div class="progress-bar" style="width:33%"></div>
+				</div>
+			</div>
+		</section>
+		<section id="dashboard-data" class="centeredboxes">
+			<div id="calendar-wrapper">
+				<div id="calendar">
+					
+				</div>
+				<div class="spacer"></div>
+				<a href="#" class="button bg-blue">VIEW CALENDAR</a>
+			</div>
+			<div id="creditmonitor-wrapper">
+				<div id="creditmonitor-info">
+					Credit monitoring alerts from<br>
+TransUnion, Equifax and Experian
+				</div>
+				<div id="creditmonitor">
+					<img src="images/creditupdates.png">
+				</div>
+				<div class="spacer"></div>
+				<a href="#" class="button bg-blue">CREDIT MONITORING SERVICE</a>
+			</div>
+			<div id="countdown-wrapper">
+				<div id="countdown-info">
+					Days Until Credit Report<br>
+is available for you to upload
+				</div>
+				<div id="countdown-timer" class="dash-active">
+					
+				</div>
+				<div class="spacer"></div>
+				<a href="#" class="button bg-blue">UPLOAD UPDATED CREDIT REPORT</a>
+			</div>
+		</section>
+		<footer>
+			<div id="footer-links">
+				<a href="#">Privacy</a>
+				<a href="#">Terms</a>
+				<a href="#">Disclosure</a>
+				<a href="#">Compilance </a>
+				<a href="#">Affiliates</a>
+				<a href="#">Whitelist</a>
+				<a href="#">Refunds</a>
+			</div>
+			<div>
+				Copyright © 2016 Credit Control.
+			</div>
+			<div id="footer-social">
+				<a href="#"><img src="images/social-fb.png"</a>
+				<a href="#"><img src="images/social-twitter.png"</a>
+			</div>
+		</footer>
+	</div>
+	<script>
+		$(document).ready(function() {
+			var crgraph1 = Circles.create({
+			  id:                  'cr-graph-1',
+			  radius:              50,
+			  value:               63,
+			  maxValue:            100,
+			  width:               9,
+			  text:                '<img src="images/ico-graph-bin.png">',
+			  colors:              ['#ececec', '#72c6cb'],
+			  duration:            400,
+			  textClass:           'cr-graph-ico',
+			  styleWrapper:        true,
+			  styleText:           true
+			});
+			var crgraph2 = Circles.create({
+			  id:                  'cr-graph-2',
+			  radius:              50,
+			  value:               33,
+			  maxValue:            100,
+			  width:               9,
+			  text:                '<img src="images/ico-graph-x.png">',
+			  colors:              ['#ececec', '#e4427b'],
+			  duration:            400,
+			  textClass:           'cr-graph-ico',
+			  styleWrapper:        true,
+			  styleText:           true
+			});
+			var crgraph3 = Circles.create({
+			  id:                  'cr-graph-3',
+			  radius:              50,
+			  value:               43,
+			  maxValue:            100,
+			  width:               9,
+			  text:                '<img src="images/ico-graph-ok.png">',
+			  colors:              ['#ececec', '#b1e77d'],
+			  duration:            400,
+			  textClass:           'cr-graph-ico',
+			  styleWrapper:        true,
+			  styleText:           true
+			});
+			var endDate = '2016-05-22';
+			$('#calendar').calendar();
+			var countdown = $('#countdown-timer').FlipClock(0, {
+				countdown: true,
+				clockFace: 'DailyCounter',
+				showSeconds: false
+			});
+		});
+	</script>
+</body>
+</html>

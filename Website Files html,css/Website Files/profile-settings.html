@@ -1,0 +1,123 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Example</title>
+  <meta name="description" content="Example">
+  <meta name="author" content="Example">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/select.css">
+  
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+  <script src="js/select.js"></script>
+  
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+<body>
+	<header>
+		<div id="headerwrap">
+			<div id="logo">
+				<a href="#"><img src="images/logo.png"></a>
+			</div>
+			<div id="nav">
+				<a id="nav-dashboard" href="dashboard.html">Dashboard</a>
+				<a id="nav-reports" href="reports.html">Reports</a>
+				<a id="nav-academy" href="academy.html">Academy</a>
+				<a id="nav-affiliates" href="affiliates-howitworks.html">Affiliates</a>
+			</div>
+			<div id="nav-after">
+				<a id="nav-profile" href="profile-settings.html" class="active">Profile</a>
+				<a id="nav-logout-light" href="#">&nbsp;</a>
+			</div>
+		</div>
+	</header>
+	<div id="head-submenu">
+		<div id="submenu">
+			<a id="sub-settings" href="profile-settings.html" class="active">Profile Settings</a>
+			<a id="sub-support" href="#">Support</a>
+			<a id="sub-billing" href="profile-billing.html">Billing</a>
+		</div>
+	</div>
+	<div id="wrapper">
+		<div class="page-head">
+			<h1>Profile Settings</h1>
+		</div>
+		<section>
+			<div id="settings-form-wrapper">
+				<form method="post" action="" id="settings-form" name="settings-form">
+					<div id="settings-form-data" class="centeredboxes clearfix">
+						<div class="left">
+							<input type="text" name="firstname" class="i-user" placeholder="First Name">
+							<input type="text" name="lastname" class="i-user" placeholder="Last name">
+							<input type="email" name="email" class="i-email" placeholder="Email">
+							<input type="text" name="phone" class="i-phone" placeholder="Phone">
+							<input type="text" name="password" class="i-password" placeholder="Password">
+							<input type="text" name="confirmpassword" class="i-password" placeholder="Confirm Password">
+						</div>
+						<div class="right">
+							<input type="text" name="address" class="i-address" placeholder="Address">
+							<input type="text" name="address2" class="i-address" placeholder="Address 2">
+							<div>
+								<select name="country">
+									<option selected disabled>Country</option>
+									<option>United States</option>
+								</select>
+							</div>
+							<div>
+								<select name="city">
+									<option selected disabled>City</option>
+									<option>Greenbow</option>
+								</select>
+							</div>
+							<div class="clearfix">
+								<div id="settings-state" class="left">
+									<select name="state">
+										<option selected disabled>State</option>
+										<option>Alabama</option>
+									</select>
+								</div>
+								<div id="settings-zip" class="right">
+									<input type="text" name="zip" placeholder="ZIP">
+								</div>
+							</div>
+							<input type="text" name="ssn" class="i-ssn" placeholder="Social Security Number">
+						</div>
+					</div>
+					<div class="align-center">
+						<a href="#" id="settings-form-save" class="button bg-yellow">SAVE SETTINGS</a>
+					</div>
+				</form>
+			</div>
+		</section>
+		<footer>
+			<div id="footer-links">
+				<a href="#">Privacy</a>
+				<a href="#">Terms</a>
+				<a href="#">Disclosure</a>
+				<a href="#">Compilance </a>
+				<a href="#">Affiliates</a>
+				<a href="#">Whitelist</a>
+				<a href="#">Refunds</a>
+			</div>
+			<div>
+				Copyright © 2016 Credit Control.
+			</div>
+			<div id="footer-social">
+				<a href="#"><img src="images/social-fb.png"</a>
+				<a href="#"><img src="images/social-twitter.png"</a>
+			</div>
+		</footer>
+	</div>
+	<script>
+		$(function() { $("select").selectBoxIt({autoWidth:false}); });
+	</script>
+</body>
+</html>

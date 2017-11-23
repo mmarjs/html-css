@@ -1,0 +1,295 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Example</title>
+  <meta name="description" content="Example">
+  <meta name="author" content="Example">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/select.css">
+  
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+  <script src="js/select.js"></script>
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+<body class="step3">
+	<header class="bordered">
+		<div id="headerwrap">
+			<div id="logo">
+				<a href="#"><img src="images/logo.png"></a>
+			</div>
+			<div id="nav-after">
+				<a id="nav-support" href="#">Support</a>
+				<a id="nav-profile" href="#">Profile</a>
+				<a id="nav-logout" href="#">Logout</a>
+			</div>
+		</div>
+	</header>
+	<div class="popup-overlay">
+		<div id="customize-popup" class="popup-content">
+			<a href="#" class="popup-close"><img src="images/ico-close.png"></a>
+			<!-- form start -->
+			<form method="post" action="" id="customize-form">
+			<div id="customize-header">
+				<div class="left">
+					Customize
+				</div>
+				<div class="right">
+					<label for="dispute-select">Dispute All Is</label>
+					<div class="sel">
+					<select name="dispute-select" id="dispute-select">
+						<option>Account is Unveriable</option>
+					</select>
+					</div>
+					<div id="cust-top-buttons">
+						<a href="#" class="button bg-red" id="cust-autopilot">Autopilot Off</a>
+						<a href="#" class="button bg-blue" id="cust-sync">Sync Reports</a>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+
+			<div id="customize-table" class="table-wrapper">
+				<div class="table-tabs">
+					<a href="#">TRANS UNION <img src="images/company-1.png"></a>
+					<a href="#" class="active">EQUIFAX <img src="images/company-2.png"></a>
+					<a href="#">EXPERIAN <img src="images/company-3.png"></a>
+				</div>
+				<div class="table">
+					<div class="table-holder">
+						<table id="step3-cust-table">
+							<thead>
+								<tr>
+									<th>Account Name</th>
+									<th>Account Number</th>
+									<th>Buerau(s)</th>
+									<th>Dispute Reason</th>
+									<th>Dispute Priority</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>AP ONE</td>
+									<td>466309002327XXXX</td>
+									<td>
+										<select>
+											<option>Account is Unveriable</option>
+										</select>
+									</td>
+									<td>
+										<select>
+											<option>Account is Unveriable</option>
+										</select>
+									</td>
+									<td>
+										<select>
+											<option>Account is Unveriable</option>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<td>US BANK</td>
+									<td>466309002328XXXX</td>
+									<td>
+										<select>
+											<option>Account is Unveriable</option>
+										</select>
+									</td>
+									<td>
+										<select>
+											<option>Account is Unveriable</option>
+										</select>
+									</td>
+									<td>
+										<select>
+											<option>Account is Unveriable</option>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<td>WF CRD SVC</td>
+									<td>466309002329XXXX</td>
+									<td>
+										<select>
+											<option>Account is Unveriable</option>
+										</select>
+									</td>
+									<td>
+										<select>
+											<option>Account is Unveriable</option>
+										</select>
+									</td>
+									<td>
+										<select>
+											<option>Account is Unveriable</option>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<td>NAVIENT</td>
+									<td>466309002230XXXX</td>
+									<td>
+										<select>
+											<option>Account is Unveriable</option>
+										</select>
+									</td>
+									<td>
+										<select>
+											<option>Account is Unveriable</option>
+										</select>
+									</td>
+									<td>
+										<select>
+											<option>Account is Unveriable</option>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<td>CHASE NA</td>
+									<td>466309002231XXXX</td>
+									<td>
+										<select>
+											<option>Account is Unveriable</option>
+										</select>
+									</td>
+									<td>
+										<select>
+											<option>Account is Unveriable</option>
+										</select>
+									</td>
+									<td>
+										<select>
+											<option>Account is Unveriable</option>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<td>AFNI</td>
+									<td>466309002232XXXX</td>
+									<td>
+										<select>
+											<option>Account is Unveriable</option>
+										</select>
+									</td>
+									<td>
+										<select>
+											<option>Account is Unveriable</option>
+										</select>
+									</td>
+									<td>
+										<select>
+											<option>Account is Unveriable</option>
+										</select>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="table-pagination centeredboxes">
+						<div class="table-pagination-button">
+							<a href="#" class="btn-prev"><span>Previous</span>&nbsp;</a>
+						</div>
+						<div class="table-pagination-pages">
+							<a href="#">1</a>
+							<a href="#" class="active">2</a>
+							<a href="#">3</a>
+							<span>...</span>
+							<a href="#">17</a>
+						</div>
+						<div class="table-pagination-button">
+							<a href="#" class="btn-next"><span>Next</span>&nbsp;</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="customize-footer">
+				<div class="left">
+					<div>
+						<label for="cust-freq">Select Dispute Frequency</label>
+						<select>
+							<option>5 weeks (recommended)</option>
+						</select>
+					</div>
+					<div>
+						<label for="cust-freq">Select # of Items to Dispute a Month</label>
+						<select>
+							<option>3 (recommended)</option>
+						</select>
+					</div>
+				</div>
+				<div class="right">
+					<a href="#" class="button bg-yellow">START DISPUTES</a>
+					<a href="#" class="button bg-blue" id="cust-mycal">My Calendar</a>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<!-- form end -->
+			</form>
+		</div>
+	</div>
+	<div id="wrapper">
+		<section id="step-progress">
+			<div id="step-progress-content" class="centeredboxes">
+				<div id="step1" class="step-active">
+					Upload<br>
+	Credit Report
+				</div>
+				<div id="step2" class="step-active">
+					Review<br>
+	Your Report
+				</div>
+				<div id="step3" class="step-active highlighted">
+					Start<br>
+	Disputes
+				</div>
+			</div>
+			<span id="step-progress-bar" class="step3"></span>
+		</section>
+		<section id="video">
+			<h1>Start Disputes</h1>
+			<div id="video-wrapper">
+				<iframe id="video-player" type="text/html" width="100%" height="100%" src="http://www.youtube.com/embed/lYKRPzOi1zI?autoplay=0&controls=0&showinfo=0" frameborder="0"></iframe>
+
+			</div>
+			<div id="step-buttons">
+				<a href="#" class="button bg-yellow">START DISPUTES</a>
+				<a href="#" id="btn-customize">Customize</a>
+			</div>
+			<div id="clip-spacer">
+				<img src="images/clip.png">
+				<span></span>
+			</div>
+		</section>
+		<section id="bottom-info" class="centeredboxes">
+			<div>
+				<p>
+					Credit Control gives you the tools to challenge anything on your credit reports you believe to be inaccurate, incomplete, or unverifiable according to the Fair Credit Reporting Act (FCRA). We compare the creditre portdatabe tween all 3 bureaus to determinep otential errors on your credit reports and, by default, will include these potential errors as dispute reasons in the letters.
+				</p>
+			</div>
+			<div>
+				<p>The "StartDisputes" feature allows you to schedule disputes in advance to the 3 major credit bureaus and to all creditors/collection agencies involved all with just one-click.</p>
+				<p>Although we have default settings that do most of the hard work for you, feel free to customize the disputes as you see fit.</p>
+			</div>
+			<div>
+				<p>Clicking "StartDisputes" means you accept all settings and consent to begin the dispute process. </p>
+				<p>You can stop disputes any time by clicking "Stop Disputes". </p>
+				<p>Click here for more information</p>
+			</div>
+		</section>
+		<footer>
+			Copyright © 2016 Credit Control.
+		</footer>
+	</div>
+	<script>
+		$(function() { $("select").selectBoxIt({autoWidth:false}); });
+	</script>
+</body>
+</html>

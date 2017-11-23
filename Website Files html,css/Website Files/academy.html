@@ -1,0 +1,132 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Example</title>
+  <meta name="description" content="Example">
+  <meta name="author" content="Example">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/select.css">
+  
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+  <script src="js/select.js"></script>
+  
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+<body>
+	<header class="bordered">
+		<div id="headerwrap">
+			<div id="logo">
+				<a href="#"><img src="images/logo.png"></a>
+			</div>
+			<div id="nav">
+				<a id="nav-dashboard" href="dashboard.html">Dashboard</a>
+				<a id="nav-reports" href="reports.html">Reports</a>
+				<a id="nav-academy" href="academy.html" class="active">Academy</a>
+				<a id="nav-affiliates" href="affiliates-howitworks.html">Affiliates</a>
+			</div>
+			<div id="nav-after">
+				<a id="nav-profile" href="profile-settings.html">Profile</a>
+				<a id="nav-logout-light" href="#">&nbsp;</a>
+			</div>
+		</div>
+	</header>
+	<div id="wrapper">
+		<div class="page-head" class="clearfix">
+			<h1 class="left">Academy</h1>
+			<div class="right" id="categories">
+				<div>Category</div>
+				<div>
+					<select name="category-picker" id="category-picker">
+						<option>Training Videos</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		<section id="academy">
+			<div id="academy-videos-wrapper" class="centeredboxes">
+				<div class="academy-video">
+					<a href="#"><img src="images/academy-link-1.png"></a>
+					<span class="academy-video-title">Video Name First</span>
+				</div>
+				<div class="academy-video">
+					<a href="#"><img src="images/academy-link-2.png"></a>
+					<span class="academy-video-title">Video Name Second, long example of a name</span>
+				</div>
+				<div class="academy-video">
+					<a href="#"><img src="images/academy-link-3.png"></a>
+					<span class="academy-video-title">Video Name Other</span>
+				</div>
+				<div class="academy-video">
+					<a href="#"><img src="images/academy-link-4.png"></a>
+					<span class="academy-video-title">Video Name #2587, new long example of a video name at three lines</span>
+				</div>
+				<div class="academy-video">
+					<a href="#"><img src="images/academy-link-5.png"></a>
+					<span class="academy-video-title">Video Name Second, other example</span>
+				</div>
+				<div class="academy-video">
+					<a href="#"><img src="images/academy-link-6.png"></a>
+					<span class="academy-video-title">Video Name First</span>
+				</div>
+				<div class="academy-video">
+					<a href="#"><img src="images/academy-link-7.png"></a>
+					<span class="academy-video-title">Video Name Second</span>
+				</div>
+				<div class="academy-video">
+					<a href="#"><img src="images/academy-link-8.png"></a>
+					<span class="academy-video-title">Video Name Other</span>
+				</div>
+				<div class="academy-video">
+					<a href="#"><img src="images/academy-link-9.png"></a>
+					<span class="academy-video-title">Video Name Other</span>
+				</div>
+				<div class="academy-video">
+					<a href="#"><img src="images/academy-link-10.png"></a>
+					<span class="academy-video-title">Video Name #2587, new long example of a video name at three lines</span>
+				</div>
+				<div class="academy-video">
+					<a href="#"><img src="images/academy-link-11.png"></a>
+					<span class="academy-video-title">Video Name Second, other example</span>
+				</div>
+				<div class="academy-video">
+					<a href="#"><img src="images/academy-link-12.png"></a>
+					<span class="academy-video-title">Video Name First</span>
+				</div>
+			</div>
+			<div class="align-center">
+				<a href="#" class="showmore">Show More</a>
+			</div>
+		</section>
+		<footer>
+			<div id="footer-links">
+				<a href="#">Privacy</a>
+				<a href="#">Terms</a>
+				<a href="#">Disclosure</a>
+				<a href="#">Compilance </a>
+				<a href="#">Affiliates</a>
+				<a href="#">Whitelist</a>
+				<a href="#">Refunds</a>
+			</div>
+			<div>
+				Copyright © 2016 Credit Control.
+			</div>
+			<div id="footer-social">
+				<a href="#"><img src="images/social-fb.png"</a>
+				<a href="#"><img src="images/social-twitter.png"</a>
+			</div>
+		</footer>
+	</div>
+	<script>
+		$(function() { $("select").selectBoxIt({autoWidth:false}); });
+	</script>
+</body>
+</html>
